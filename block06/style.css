@@ -1,0 +1,53 @@
+
+h2{
+    width: 70%;
+    height: 20px;
+    color: rgb(0, 4, 255);
+    background-color: bisque;
+    border: 2px solid red;
+    text-align: left;
+    padding: 5mm 0 5mm 5mm;
+    margin: 5mm 0 5mm 5mm;
+}
+
+section{
+    background-color: bisque;
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid greenyellow;
+}
+
+h3{
+    color: rgb(255, 0, 128);
+    background-color: rgb(236, 255, 196);
+    border: 2px solid rgb(255, 166, 0);
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1mm;
+    padding: 10px;
+    border: 2px;
+    flex-direction: row;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 4mm;
+  }
+    
+body{
+    background-color: rgb(238, 168, 168);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}   
+    
