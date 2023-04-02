@@ -17,6 +17,9 @@ let code1 = 20 / 2 ;
 const code2 = 100 % 60 ;
 var code3 = 40 - 1 ;
 
-//Display the combination in an alert popup
+//Display the combination in an alert pop-up
 alert(`${code1} - ${code2} - ${code3}`);
+
+
+
 
