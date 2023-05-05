@@ -21,30 +21,31 @@ function isEvenPriced (item) {
 const evenPricedItems = coffeeMenu.filter(isEvenPriced) ;
 console.log(evenPricedItems.map(printName));
 
-/*
-const collectPrice = (array) => {
-    
-    return item.price ;
-} ;
 
-const priceArray = coffeeMenu.map(collectPrice) ;
-const sumTotal = (accumatator, currentValue) => {
-    return accumatator + currentValue ;
-} ;
-const totalPrice = priceArray.reduce(sumTotal) ;
+
+const totalPrice = coffeeMenu.reduce(
+    (total,item) => (total += item.price) , 0
+) ;
 console.log(totalPrice) ;
-*/
+
 
 function isSeasonal (item) {
     if (item.seasonal) {
         return item.name ;
     }
-}
+} ;
+
 const seasonal = coffeeMenu.filter(isSeasonal) ;
 console.log (seasonal.map(printName)) ;
 
 
-seasonal.forEach(element => console.log(element + " with imported beans"))
+function seasonalPrint (item) {
+    return (item.name + " with imported beans") ;
+} ;
+
+seasonal.forEach(item => console.log(item.name + " with imported beans"));
+
+
 
 
 
