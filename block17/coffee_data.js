@@ -7,7 +7,7 @@
 // c. Objects and properties should have commas seperating them.
 // d. Connect the coffee_data.js file to the index.js file.
 
-const coffeeMenu = [
+let coffeeMenu = [
     {
         name: "cappuccino",
         price: 8,
@@ -40,7 +40,7 @@ const coffeeMenu = [
     },
     {
         name: "iced coffee",
-        price: 6,
+        price: "6",
         seasonal: false,
     },
     {
@@ -50,9 +50,23 @@ const coffeeMenu = [
     },
     {
         name: "cuban espresso",
-        price: 10,
+        price: "10",
         seasonal: true,
     }
 ];
 
-module.exports = coffeeMenu ;
+// 1. Clean the coffee_data.js file.
+
+// All prices should be numbers.
+// All items should be strings.
+// Objects and properties should have commas separating them.
+// Connect the coffee_data.js file to the index.js file.
+
+function cleanNumbers (item) {
+    item.price = Number(item.price) ;
+    return item ;
+}
+
+updatedCoffeeMenu = coffeeMenu.map(cleanNumbers) ;
+// console.table(coffeeMenu) ;
+module.exports = updatedCoffeeMenu ;
