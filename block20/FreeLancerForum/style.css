@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(210, 255, 47);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    width:fit-content;
+}
+
+ul {
+    padding: 20;
+}
+
+li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
